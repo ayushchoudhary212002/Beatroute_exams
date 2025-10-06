@@ -4,7 +4,6 @@ import io.restassured.http.ContentType;
 
 public class CreateNote {
     public static void main(String[] args) {
-        String body = "{ \"note\": \"This is a test note\" }";
         Response res = RestAssured.given()
                 .contentType(ContentType.JSON)
                 .body(body)
